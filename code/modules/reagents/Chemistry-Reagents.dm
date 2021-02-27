@@ -814,6 +814,16 @@
 	//Toxins are really weak, but without being treated, last very long
 	M.adjustToxLoss(0.2)
 
+/datum/reagent/nutriredox
+	name = "nutriredox"
+	id = NUTRIREDOX
+	description = "A plant-based compound that aggresively dissolves nutriment on a 10:1 ratio."
+	reagent_state = REAGENT_STATE_SOLID
+	nutriment_factor = -10 * REAGENTS_METABOLISM
+	color = "#664330" //rgb: 102, 67, 48
+	density = 19.62
+	specheatcap = 52.68
+
 //Fast and lethal
 /datum/reagent/cyanide
 	name = "Cyanide"
