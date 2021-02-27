@@ -227,6 +227,7 @@ var/global/list/gene_tag_masks = list()   // Gene obfuscation for delicious tria
 		MINDBREAKER = 100,
 		MINTTOXIN = 60,
 		DEFALEXORIN = 100,
+		NUTRIREDOX = 80,
 		// Things of Dubious Use
 		SUGAR = 100,
 		ETHYLREDOXRAZINE = 100,
