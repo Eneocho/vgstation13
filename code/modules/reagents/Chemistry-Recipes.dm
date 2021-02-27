@@ -846,6 +846,13 @@
 /datum/chemical_reaction/solidification/plastic/product_to_spawn()
 	return /obj/item/stack/sheet/mineral/plastic
 
+/datum/chemical_reaction/nutriredox
+	name = "Nutriredox"
+	id = "nutriredox"
+	result = null
+	required_reagents = list(NUTRIMENT = 1, NUTRIREDOX = 0.1)
+	result_amount = 0
+
 /datum/chemical_reaction/condensedcapsaicin
 	name = "Condensed Capsaicin"
 	id = CONDENSEDCAPSAICIN
