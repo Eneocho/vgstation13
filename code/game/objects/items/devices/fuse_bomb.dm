@@ -23,7 +23,7 @@
 	..()
 	if(!fuse_lit)
 		if(iswelder(W))
-			var/obj/item/weapon/weldingtool/WT = W
+			var/obj/item/tool/weldingtool/WT = W
 			if(WT.isOn())
 				lit(user,W)
 		else if(istype(W, /obj/item/weapon/lighter))
@@ -39,7 +39,7 @@
 			if(C.lit)
 				lit(user,W)
 	else
-		if(iswirecutter(W))
+		if(W.is_wirecutter(user))
 			fuse_lit = 0
 			update_icon()
 			to_chat(user, "<span class='warning'>You extinguish the fuse with [seconds_left] seconds left!</span>")

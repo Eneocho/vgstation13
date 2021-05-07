@@ -257,6 +257,8 @@
 
 /mob/New()
 	. = ..()
+	original_density = density
+
 	mob_list += src
 
 	if(DEAD == stat)
@@ -436,6 +438,10 @@
 	if(spell_masters && spell_masters.len)
 		for(var/obj/abstract/screen/movable/spell_master/spell_master in spell_masters)
 			spell_master.update_spells(0, src)
+
+	for (var/time in crit_rampup)
+		if (world.time > num2text(time) + 20 SECONDS) // clear out the items older than 20 seconds
+			crit_rampup -= time
 	return
 
 /mob/proc/see_narsie(var/obj/machinery/singularity/narsie/large/N, var/dir)
@@ -1198,10 +1204,10 @@ Use this proc preferably at the end of an equipment loadout
 	var/msg = strip_html(flavor_text)
 	if(findtext(msg, "http:") || findtext(msg, "https:") || findtext(msg, "www."))
 		return "<font color='#ffa000'><b><a href='?src=\ref[src];show_flavor_text=1'>Show flavor text</a></b></font>"
-	if(length(msg) <= 32)
+	if(length(msg) <= 64)
 		return "<font color='#ffa000'><b>[msg]</b></font>"
 	else
-		return "<font color='#ffa000'><b>[copytext(msg, 1, 32)]...<a href='?src=\ref[src];show_flavor_text=1'>More</a></b></font>"
+		return "<font color='#ffa000'><b>[copytext(msg, 1, 64)]...<a href='?src=\ref[src];show_flavor_text=1'>More</a></b></font>"
 
 /mob/verb/abandon_mob()
 	set name = "Respawn"
@@ -1516,6 +1522,12 @@ Use this proc preferably at the end of an equipment loadout
 		return 0
 	return 1
 
+/mob/proc/isKnockedDown() //Check if the mob is knocked down
+	return isUnconscious() || knockdown || paralysis
+
+/mob/proc/isJustStunned() //Some ancient coder (as of 2021) made it so that it checks directly for whether the variable has a positive number, and I'm too afraid of unintended consequences down the line to just change it to isStunned(), so instead you have this half-baked abomination of a barely-used proc just so that player simple_animal mobs can move. You're welcome!
+	return stunned
+
 //Updates canmove, lying and icons. Could perhaps do with a rename but I can't think of anything to describe it.
 /mob/proc/update_canmove()
 	if (locked_to)
@@ -1524,12 +1536,11 @@ Use this proc preferably at the end of an equipment loadout
 			canmove = 0
 			lying = (category.flags & LOCKED_SHOULD_LIE) ? TRUE : FALSE //A lying value that !=1 will break this
 
-
-	else if(isUnconscious() || knockdown || paralysis || resting || !can_stand)
+	else if(resting || !can_stand || isKnockedDown())
 		stop_pulling()
 		lying = 1
 		canmove = 0
-	else if(stunned)
+	else if(isJustStunned())
 //		lying = 0
 		canmove = 0
 	else if(captured)
@@ -1546,7 +1557,7 @@ Use this proc preferably at the end of an equipment loadout
 			setDensity(FALSE)
 			drop_hands()
 		else
-			setDensity(TRUE)
+			setDensity(original_density)
 
 	//Temporarily moved here from the various life() procs
 	//I'm fixing stuff incrementally so this will likely find a better home.
@@ -2211,16 +2222,9 @@ mob/proc/on_foot()
 		//to_chat(world, "[target] has psy resist")
 		to_chat(src, "The target mind is resisting!")
 		return 0
-	if(ishuman(target))
-		var/mob/living/carbon/human/H = target
-		if(H.is_wearing_item(/obj/item/clothing/head/tinfoil, slot_head))
-			to_chat(src, "Interference is disrupting the connection with the target mind.")
-			return 0
-	if(ismartian(target))
-		var/mob/living/carbon/complex/martian/MR = target
-		if(MR.is_wearing_any(list(/obj/item/clothing/head/helmet/space/martian, /obj/item/clothing/head/tinfoil), slot_head))
-			to_chat(src, "Interference is disrupting the connection with the target mind.")
-			return 0
+	if(target.is_wearing_any(list(/obj/item/clothing/head/helmet/space/martian,/obj/item/clothing/head/tinfoil,/obj/item/clothing/head/helmet/stun), slot_head))
+		to_chat(src, "Interference is disrupting the connection with the target mind.")
+		return 0
 	return 1
 
 /mob/proc/get_personal_ambience()

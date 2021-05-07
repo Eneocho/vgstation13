@@ -164,20 +164,25 @@
 	return 1
 
 /obj/structure/bed/chair/AltClick(mob/user as mob)
-	buckle_chair(user,user)
+	buckle_chair(user,user, 0) // Require to stand on the chair in order to do that
 
 /obj/structure/bed/chair/MouseDropTo(mob/M as mob, mob/user as mob)
 	buckle_chair(M,user)
 
-/obj/structure/bed/chair/proc/buckle_chair(mob/M as mob, mob/user as mob)
+/obj/structure/bed/chair/proc/buckle_chair(mob/M as mob, mob/user as mob, var/override_buckle_range = null)
 	if(!istype(M))
 		return
+
+	var/effective_buckle_range = (isnull(override_buckle_range) ? buckle_range : override_buckle_range)
 
 	var/mob/living/carbon/human/target = null
 	if(ishuman(M))
 		target = M
 
-	if(!user.Adjacent(M) || !user.Adjacent(src))
+	if(user!=M && (!user.Adjacent(M) || !user.Adjacent(src)))
+		return
+
+	if(get_dist(src,user) > effective_buckle_range)
 		return
 
 	if(target && target.op_stage.butt == 4 && Adjacent(target) && user.Adjacent(src) && !user.incapacitated()) //Butt surgery is at stage 4
@@ -586,6 +591,18 @@
 		unfolded = null
 	..()
 
+/obj/item/folding_chair/attack(mob/living/M, mob/living/user, def_zone, originator)
+	if(user.is_wearing_item(/obj/item/weapon/storage/belt/champion))
+		force *= 2 //Shitcode! There's no proc where the amount of force can be modified at least temporarily.
+		..()
+		force /= 2
+		return
+	..()
+
+/obj/item/folding_chair/on_attack(atom/attacked, mob/user)
+	hitsound = pick('sound/items/trayhit1.ogg', 'sound/items/trayhit2.ogg')
+	..()
+
 /obj/item/folding_chair/attack_self(mob/user)
 	unfolded.forceMove(user.loc)
 	unfolded.add_fingerprint(user)
@@ -628,7 +645,7 @@
 		if (locked_atoms && locked_atoms.len > 0)
 			to_chat(user,"<span class='warning'>You cannot downgrade a seat with someone buckled on it.</span>")
 			return
-		var/obj/item/weapon/weldingtool/WT = W
+		var/obj/item/tool/weldingtool/WT = W
 		to_chat(user, "You start welding the plasteel off \the [src]")
 		if (WT.do_weld(user, src, 50, 3))
 			if(gcDestroyed)

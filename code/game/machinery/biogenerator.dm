@@ -233,12 +233,21 @@
 	category="Misc."
 
 /datum/biogen_recipe/misc/pest
-	cost=40
 	id="pest"
-	name="Pest Spray"
+	name="Insecticide"
+	reagent=INSECTICIDE
+	cost=35
+	amount_per_unit=10
 	other_amounts=list(5)
-	result=/obj/item/weapon/plantspray/pests
-
+	
+/datum/biogen_recipe/misc/plantbgone
+	id="plantbgone"
+	name="Plant-B-Gone"
+	reagent=PLANTBGONE
+	cost=35
+	amount_per_unit=10
+	other_amounts=list(5)
+	
 /datum/biogen_recipe/misc/candle
 	cost=50
 	id="candle"
@@ -438,7 +447,7 @@
 	update_icon()
 	return
 
-/obj/machinery/biogenerator/crowbarDestroy(mob/user, obj/item/weapon/crowbar/I)
+/obj/machinery/biogenerator/crowbarDestroy(mob/user, obj/item/tool/crowbar/I)
 	if(beaker)
 		to_chat(user, "<span class='warning'>A beaker is loaded, you cannot deconstruct \the [src].</span>")
 		return FALSE

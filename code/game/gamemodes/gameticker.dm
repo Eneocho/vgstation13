@@ -471,7 +471,7 @@ var/datum/controller/gameticker/ticker
 					choices.Add(key)
 				var/mapname=pick(choices)
 				vote.chosen_map = maps[mapname] // Hack, but at this point I could not give a shit.
-				watchdog.chosen_map = copytext(mapname,1,(length(mapname)))
+				watchdog.chosen_map = mapname
 				log_game("Server chose [watchdog.chosen_map]!")
 
 
@@ -735,6 +735,16 @@ var/datum/controller/gameticker/ticker
 				R.connect_AI(select_active_ai_with_fewest_borgs())
 				to_chat(R, R.connected_ai?"<b>You have synchronized with an AI. Their name will be stated shortly. Other AIs can be ignored.</b>":"<b>You are not synchronized with an AI, and therefore are not required to heed the instructions of any unless you are synced to them.</b>")
 			R.lawsync()
+
+	//Toggle lightswitches on in occupied departments
+	var/discrete_areas = list()
+	for(var/mob/living/carbon/human/H in player_list)
+		var/area/A = get_area(H)
+		if(!(A in discrete_areas)) //We've already added their department
+			discrete_areas += get_department_areas(H)
+	for(var/area/DA in discrete_areas)
+		for(var/obj/machinery/light_switch/LS in DA)
+			LS.toggle_switch(1)
 
 // -- Tag mode!
 

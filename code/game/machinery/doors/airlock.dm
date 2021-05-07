@@ -264,6 +264,7 @@
 	..()
 
 /obj/machinery/door/airlock/uranium/proc/radiate()
+	emitted_harvestable_radiation(get_turf(src), 3, range = 5)
 	for(var/mob/living/L in range (3,src))
 		L.apply_radiation(15,RAD_EXTERNAL)
 	return
@@ -1212,7 +1213,7 @@ About the new airlock wires panel:
 
 	if (iswelder(I))
 		if (density && !operating)
-			var/obj/item/weapon/weldingtool/WT = I
+			var/obj/item/tool/weldingtool/WT = I
 			if (WT.remove_fuel(0, user))
 				if (!welded)
 					welded = 1
@@ -1220,7 +1221,7 @@ About the new airlock wires panel:
 					welded = null
 
 				update_icon()
-	else if (ismultitool(I))
+	else if (I.is_multitool(user))
 		if (!operating)
 			if(panel_open)
 				wires.Interact(user)

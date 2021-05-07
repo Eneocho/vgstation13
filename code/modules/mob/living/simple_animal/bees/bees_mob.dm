@@ -84,7 +84,7 @@ var/bee_mobs_count = 0
 	can_butcher = 0
 
 	var/updateState = 0//if set to 1, the bee mob will check if it should split based on its bee datums' intents
-	var/state = BEE_ROAMING
+	var/state = BEE_ROAMING//this controls the bee's current behaviour
 	var/atom/destination = null
 	var/list/bees = list()
 	var/mob/target = null
@@ -225,6 +225,10 @@ var/bee_mobs_count = 0
 			visible_message("<span class='danger'>The bees stop moving...</span>")
 			adjustBruteLoss(rand(40,110)) //Kills 4-11 bees. Maximum bees per swarm 20.
 			panic_attack() //Bees don't know who is responsible, but they'll get mad at everyone!
+		if(INSECTICIDE)
+			visible_message("<span class='danger'>The bees writhe in agony before falling to the floor, dead.</span>")
+			adjustBruteLoss(rand(90,180)) //Since insecticide is designed to kill insects rather than just being generally poisonous, kills from 9 to 18.
+			panic_attack()
 
 /mob/living/simple_animal/bee/unarmed_attacked(mob/living/attacker, damage, damage_type, zone)
 	..()
@@ -642,9 +646,6 @@ var/bee_mobs_count = 0
 			wander = 0
 			var/turf/target_turf = get_turf(home)
 			if(target_turf)
-				if (calmed <= 0)
-					step_to(src, target_turf)
-
 				if(src.loc == target_turf)
 					if (!home.species || bee_species == home.species)
 						for(var/datum/bee/B in bees)
@@ -654,6 +655,8 @@ var/bee_mobs_count = 0
 						visible_message("<span class='notice'>A swarm has lost its way.</span>")
 						home = null
 						mood_change(BEE_ROAMING)
+				if (calmed <= 0)
+					step_to(src, target_turf)
 			else
 				visible_message("<span class='notice'>A swarm has lost its way.</span>")
 				home = null

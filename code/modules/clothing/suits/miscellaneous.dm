@@ -791,6 +791,7 @@ obj/item/clothing/suit/cassock
 	max_combined_w_class = 28
 	storage_slots = 14
 	actions_types = list(/datum/action/item_action/show_wares)
+	allowed = list(/obj/item/weapon/gun/projectile/hecate/hunting)
 
 /datum/action/item_action/show_wares/Trigger()
 	var/obj/item/clothing/suit/storage/trader/T = target
@@ -891,13 +892,19 @@ obj/item/clothing/suit/cassock
 	body_parts_covered = 0
 	species_fit = list(INSECT_SHAPED)
 
-obj/item/clothing/suit/poncho
+/obj/item/clothing/suit/poncho
 	name = "poncho"
 	desc = "A wooly poncho. Smells of beans."
 	icon_state = "poncho"
 	item_state = "poncho"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS|IGNORE_INV
 
+/obj/item/clothing/suit/banana_suit
+	name = "banana suit"
+	desc = "Peanut butter jelly time!"
+	icon_state = "banana_suit"
+	item_state = "banana_suit"
+	body_parts_covered = FULL_TORSO|ARMS|LEGS|HIDEJUMPSUIT
 
 //BOMBER VEST
 //The whole "bump into people to detonate it, it's the only way" part is intentional, just run into them already

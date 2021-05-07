@@ -82,7 +82,7 @@
 		. = list()
 		for(var/obj/item/clothing/accessory/accessory in accessories)
 			. += "[bicon(accessory)] \a [accessory]"
-		return " It has [english_list(.)]."
+		return " It has [counted_english_list(.)]."
 
 /obj/item/clothing/accessory/pinksquare
 	name = "pink square"
@@ -117,6 +117,13 @@
 	desc = "A neosilk clip-on tie. This one is disgusting."
 	icon_state = "horribletie"
 	_color = "horribletie"
+	accessory_exclusion = TIE
+
+/obj/item/clothing/accessory/tie/bolo
+	name = "bolo tie"
+	desc = "Feels more like a millstone."
+	icon_state = "bolotie"
+	_color = "bolotie"
 	accessory_exclusion = TIE
 
 /obj/item/clothing/accessory/stethoscope

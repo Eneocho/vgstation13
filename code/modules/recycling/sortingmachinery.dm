@@ -65,7 +65,7 @@
 		update_icon()
 		return 1
 
-	if(ismultitool(W) && panel)
+	if(W.is_multitool(user) && panel)
 		mode = !mode
 		to_chat(user, "<span class='notify'>You [mode ? "disable" : "enable"] the lock on \the [src].</span>")
 		return 1
@@ -211,7 +211,7 @@
 			to_chat(user, "You attach the screws around the power connection.")
 			return
 	else if(iswelder(I) && c_mode==1)
-		var/obj/item/weapon/weldingtool/W = I
+		var/obj/item/tool/weldingtool/W = I
 		to_chat(user, "You start slicing the floorweld off the delivery chute.")
 		if(W.do_weld(user, src,20, 0))
 			if(gcDestroyed)

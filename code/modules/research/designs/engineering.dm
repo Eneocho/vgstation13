@@ -104,7 +104,7 @@
 	build_path = /obj/item/clothing/glasses/scanner/night
 
 /datum/design/device_analyser
-	name = "Device Analyser"
+	name = "Device Analyzer"
 	desc = "A device for scanning other devices. Meta."
 	id = "deviceanalyser"
 	req_tech = list(Tc_MAGNETS = 3, Tc_ENGINEERING = 4, Tc_MATERIALS = 4, Tc_PROGRAMMING = 3)
@@ -223,5 +223,5 @@
 	req_tech = list(Tc_ENGINEERING = 5, Tc_BLUESPACE = 2)
 	build_type = PROTOLATHE
 	materials = list(MAT_IRON = 18750, MAT_GLASS = 9375)
-	build_path = /obj/item/weapon/weldingtool/gatling/empty
+	build_path = /obj/item/tool/weldingtool/gatling/empty
 	category = "Engineering"
