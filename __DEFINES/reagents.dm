@@ -64,6 +64,7 @@
 #define RYETALYN 			"ryetalyn"
 #define PAISMOKE 			"paismoke"
 #define THERMITE 			"thermite"
+#define CRYOLITE			"cryolite"
 #define PARACETAMOL 			"paracetamol"
 #define MUTAGEN 			"mutagen"
 #define TRAMADOL 			"tramadol"
