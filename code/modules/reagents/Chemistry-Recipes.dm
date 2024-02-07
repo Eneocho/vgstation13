@@ -4206,5 +4206,13 @@
 	required_catalysts = list(ZOMBIEPOWDER = 5)
 	result_amount = 5
 
+/datum/chemical_reaction/cryolite
+	name = "Cryolite"
+	id = CRYOLITE
+	result = CRYOLITE
+	required_reagents = list(FROSTOIL = 1, ICE = 1, CRYOXADONE = 1)
+	required_catalysts = list(LEPORAZINE = 5)
+	result_amount = 5
+
 #undef ALERT_AMOUNT_ONLY
 #undef ALERT_ALL_REAGENTS
