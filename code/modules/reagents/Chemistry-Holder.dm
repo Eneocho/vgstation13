@@ -705,7 +705,10 @@ trans_to_atmos(var/datum/gas_mixture/target, var/amount=1, var/multiplier=1, var
 	if(temperature_A == temperature_B)
 		return temperature_A
 	if(thermalmass_A + thermalmass_B)
-		return ((temperature_A * thermalmass_A) + (temperature_B * thermalmass_B)) / (thermalmass_A + thermalmass_B)
+		if(thermalmass_A < 0 || thermalmass_B < 0)
+			return ((temperature_A * thermalmass_A) + (temperature_B * thermalmass_B)) / (thermalmass_A + thermalmass_B) * -1 //exception for cryolite
+		else
+			return ((temperature_A * thermalmass_A) + (temperature_B * thermalmass_B)) / (thermalmass_A + thermalmass_B) //everything else
 	else
 		warning("[usr] tried to equalize the temperature of a thermally-massless mixture.")
 		return T0C+20 //Sanity but this shouldn't happen.
