@@ -541,3 +541,22 @@
 		var/obj/effect/smoke/S = new /obj/effect/smoke(T)
 		S.time_to_live = 10 //unusually short smoke
 		//We don't need to start up the system because we only want to smoke one tile.
+
+/datum/reagent/cryolite
+	name = "Cryolite"
+	id = CRYOLITE
+	description = "An exotic compound that gets colder the more heat it receives. Consequently, it gets hotter the more heat it loses."
+	reagent_state = REAGENT_STATE_LIQUID
+	color = "#0ffce6" //rgb: 6, 99, 90
+	density = 2.6
+	specheatcap = -15 //it gets colder the more you heat it and viceversa
+	adj_temp = -10 //body heat makes it cool down, thereby cooling YOU down, beware
+
+/datum/reagent/cryolite/on_mob_life(var/mob/living/M)
+	if(..())
+		return 1
+	var/mob/living/carbon/human/H = M
+	if(prob(2))
+		to_chat(H, "<span class='warning'>You feel a stabbing cold in your chest!</span>")
+	if(isslimeperson(H))
+		M.adjustToxLoss(rand(15, 30)) //you dun fucked up, copypasted from frost oil
