@@ -384,7 +384,8 @@ var/list/all_bible_styles = list(
 	"Slab" = list("icon" = "slab", "desc" = "A bizarre, ticking device... That looks broken."),
 	"The Dokument" = "gunbible",
 	"Holy Grimoire" = list("icon" = "holygrimoire", "desc" = "A version of the Christian Bible with several apocryphal sections appended which detail how to combat evil forces of the night. Apply to head repeatedly."),
-	"The Loop" = list("icon" = "loop", "desc" = "The combined efforts of a thousand timelines fill this book, explaining the nature of the Loop and how to survive it. Apply to head in a cyclical way.")
+	"The Loop" = list("icon" = "loop", "desc" = "The combined efforts of a thousand timelines fill this book, explaining the nature of the Loop and how to survive it. Apply to head in a cyclical way."),
+	"Beat the Odds" = list("icon" = "luckybible", "desc" = "An in-depth explanation of how Fortuna herself weaves luck, fate and random chance. Apply to head and roll the dice.")
 )
 
 /proc/chooseBible(var/datum/religion/R, var/mob/user, var/noinput = FALSE) //Noinput if they just wanted the defaults
@@ -481,7 +482,7 @@ var/list/all_bible_styles = list(
 	preferred_incense = /obj/item/weapon/storage/fancy/incensebox/vale
 
 /datum/religion/slam/equip_chaplain(var/mob/living/carbon/human/H)
-	H.put_in_hands(new/obj/item/weapon/beach_ball/holoball)
+	H.put_in_hands(new /obj/item/weapon/beach_ball/holoball)
 	H.equip_or_collect(new /obj/item/clothing/under/shorts/black, slot_w_uniform)
 
 /datum/religion/judaism
@@ -1575,3 +1576,23 @@ var/list/all_bible_styles = list(
 
 /datum/religion/viron/equip_chaplain(var/mob/living/carbon/human/H)
 	H.equip_or_collect(new /obj/item/clothing/suit/chaplain_hoodie(H), slot_wear_suit)
+
+/datum/religion/fortuna
+	name = "Church of Fortuna"
+	deity_names = "Fortuna"
+	bible_name = "Beat the Odds"
+	male_adept = "Gambler"
+	female_adept = "Gambler"
+	keys = list("fate", "chance", "gamble", "luck", "odds", "destiny")
+
+/datum/religion/fortuna/equip_chaplain(var/mob/living/carbon/human/H)
+	//Add Fortuna's Gamble blessing/curse, and hands you fortuna's d20
+	H.put_in_hands(new /obj/item/weapon/dice/d20/fortuna)
+	var/datum/blesscurse/fortunasgamble/fortunaschaplain = new /datum/blesscurse/fortunasgamble
+	H.add_blesscurse(fortunaschaplain)
+
+/datum/religion/fortuna/convert(var/mob/living/preacher, var/mob/living/subject, var/can_renounce = TRUE)
+	. = ..()
+	if (subject)
+		var/datum/blesscurse/fortunasgamble/fortunasfollower = new /datum/blesscurse/fortunasgamble
+		subject.add_blesscurse(fortunasfollower)
