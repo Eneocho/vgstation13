@@ -282,12 +282,12 @@
 							to_chat(user, "<span class=danger><B>You have been granted protection! </span></B>")
 						if(4)
 							new /obj/item/stack/sheet/mineral/gold(user.loc, 25)
-							to_chat(user, "<span class=danger)(B>You have been reward in gold! </span></B>")
+							to_chat(user, "<span class=danger)(B>You have been rewarded in gold! </span></B>")
 						if(5)
 							new /obj/item/stack/sheet/mineral/silver(user.loc, 25)
 							to_chat(user, "<span class=danger><B>You have been rewarded in silver! </span></B>")
 						if(6)
-							to_chat(user, "<span class=danger><B>You have been reward with a fancy new costume! </span></B>")
+							to_chat(user, "<span class=danger><B>You have been rewarded with a fancy new costume! </span></B>")
 							switch(pick(1,2,3))
 								if(1)
 									new /obj/item/clothing/under/bikersuit(user.loc, user)
@@ -303,7 +303,7 @@
 									new /obj/item/clothing/head/helmet/richard(user.loc, user)
 									new /obj/item/clothing/under/jacketsuit(user.loc, user)
 						if(7)
-							to_chat(user, "<span class=danger><B>You have been reward with a selection of random potions! </span></B>")
+							to_chat(user, "<span class=danger><B>You have been rewarded with a selection of random potions! </span></B>")
 							new /obj/item/weapon/storage/bag/potion/dice_potion_bundle(user.loc, user)
 
 
@@ -403,7 +403,7 @@
 	infinite = 1
 
 /obj/item/weapon/dice/d20/cursed/unfair
-	sides = 12 //unfair varient will never roll higher then 12, but it looks like a normal mysterious d20 and otherwise acts like one
+	sides = 12 //unfair variant will never roll higher than 12, but it looks like a normal mysterious d20 and otherwise acts like one
 
 //####Borg Die
 /obj/item/weapon/dice/borg //8 in 1
@@ -457,3 +457,45 @@
 			multiplier = 0
 		result = 1 //For icon
 		update_icon()
+
+/obj/item/weapon/dice/d20/fortuna
+	name = "Fortuna's Giled d20"
+	desc = "A gilded die with twenty even sides that shines with sacred power. Are you willing to gamble with fate?"
+	icon_state = "gilded-d20-glow"
+	sides = 20
+	var/lastroll
+	var/rollwait = 300 SECONDS //5 minutes
+
+/obj/item/weapon/dice/d20/fortuna/New()
+	..()
+	lastroll = world.time - rollwait //immediately ready, we can save ourselves the !lastroll check
+	processing_objects += src
+
+/obj/item/weapon/dice/d20/fortuna/Destroy()
+	processing_objects -= src
+	..()
+
+/obj/item/weapon/dice/d20/fortuna/process()
+	if((lastroll + rollwait) > world.time)
+		icon_state = "gilded-d20-glow"
+
+/obj/item/weapon/dice/d20/fortuna/diceroll(mob/user as mob, thrown)
+	..()
+	if((lastroll + rollwait) > world.time) //roll succesfully if you haven't rolled before, or if 5 minutes have passed since the last roll
+		lastroll = world.time
+		icon_state = "gilded-d20-used
+		switch(result)
+			if(1 to 6)
+				var/datum/blesscurse/rollthedicebad/badroll = new /datum/blesscurse/rollthedicebad
+				user.add_blesscurse(badroll)
+				to_chat(user, "<span class=danger><B>You feel as if you'd broken a dozen mirrors. Better luck next time!</span></B>")
+			if(7 to 14)
+				var/datum/blesscurse/fortunasgamble/neutraldiceroll = new /datum/blesscurse/fortunasgamble
+				user.add_blesscurse(neutraldiceroll)
+				to_chat(user, "<span class=danger><B>Fate is neutral, and may have rewarded or punished you.</span></B>")
+			if(15 to 20)
+				var/datum/blesscurse/rollthedicegood/goodroll = new /datum/blesscurse/rollthedicegood
+				user.add_blesscurse(goodroll)
+				to_chat(user, "<span class=danger><B>Fortuna herself smiles upon you, you feel like a dozen clovers!</span></B>")
+	else
+		to_chat(user, "<span class=danger><B>The [src]'s sacred power has yet to refill itself, wait a bit longer.</span></B>")
