@@ -1588,6 +1588,7 @@ var/list/all_bible_styles = list(
 /datum/religion/fortuna/equip_chaplain(var/mob/living/carbon/human/H)
 	//Add Fortuna's Gamble blessing/curse, and hands you fortuna's d20
 	H.put_in_hands(new /obj/item/weapon/dice/d20/fortuna)
+	H.equip_or_collect(new /obj/item/weapon/reagent_containers/food/snacks/grown/clover/fiveleaf)
 	var/datum/blesscurse/fortunasgamble/fortunaschaplain = new /datum/blesscurse/fortunasgamble
 	H.add_blesscurse(fortunaschaplain)
 
@@ -1596,3 +1597,7 @@ var/list/all_bible_styles = list(
 	if (subject)
 		var/datum/blesscurse/fortunasgamble/fortunasfollower = new /datum/blesscurse/fortunasgamble
 		subject.add_blesscurse(fortunasfollower)
+
+/datum/religion/fortuna/renounce(var/mob/living/subject)
+	..()
+	subject.remove_blesscurse(fortunasfollower) //sorry bro no farming luck/unluck by repeatedly getting converted and deconverted
