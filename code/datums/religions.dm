@@ -1600,4 +1600,5 @@ var/list/all_bible_styles = list(
 
 /datum/religion/fortuna/renounce(var/mob/living/subject)
 	..()
+	var/datum/blesscurse/fortunasgamble/fortunasfollower
 	subject.remove_blesscurse(fortunasfollower) //sorry bro no farming luck/unluck by repeatedly getting converted and deconverted
