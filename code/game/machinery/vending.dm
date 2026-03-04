@@ -2214,6 +2214,10 @@ var/global/num_vending_terminals = 1
 		/obj/item/weapon/reagent_containers/glass/bottle/ammonia = 10,
 		/obj/item/weapon/reagent_containers/glass/bottle/diethylamine = 5,
 		)
+	premium = list(
+		/obj/structure/largecrate/hissing/vendor = 1,
+		/obj/item/floral_somatoray = 2,
+		)
 
 	pack = /obj/structure/vendomatpack/hydronutrients
 
@@ -2288,7 +2292,7 @@ var/global/num_vending_terminals = 1
 		/obj/item/seeds/dandelionseed = 3,
 		)//,/obj/item/seeds/synthbuttseed = 3)
 	premium = list(
-		/obj/item/clothing/accessory/waterflower = 1,
+		/obj/item/seeds/prehistoricbundle = 1,
 		)
 
 	pack = /obj/structure/vendomatpack/hydroseeds
@@ -2765,6 +2769,7 @@ var/global/num_vending_terminals = 1
 		/obj/item/clothing/suit/kimono/sakura = 3,
 		/obj/item/clothing/head/widehat_red = 3,
 		/obj/item/clothing/suit/red_suit = 3,
+		/obj/item/clothing/accessory/waterflower = 3,
 		/obj/item/clothing/head/nt_football_helmet = 5,
 		/obj/item/clothing/suit/nt_football = 5,
 		/obj/item/weapon/storage/lunchbox/plastic/clown = 2,
