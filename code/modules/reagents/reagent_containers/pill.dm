@@ -492,7 +492,10 @@
 		"THE BEST THING THAT EVER HAPPENED TO YOU", "Accelerating Agent (10 units)", "Defoliant Agent (5 units)", "Universal Solvent (35 units)", "Cure for Racism",\
 		"you werent supposed to find this", "For Experts", "Monkey Juice (10 units)", "test", "Rapid Gene Enhancer (9.6 units)", "Adminordrazine (10 units)", "Babys Day Out",\
 		"Dylovene (13.4328u) + Bicaridine (13.4328u) + Nutriment (1.75278u) + Green Grape Juice (3.39774u) + Tannic acid (6.8396u) + Honey (15.0536u) + Sugar (1.8241u) + Opium (4.62655u) + Allicin (5.39507u) + Blood (5.88667u) + Kelotane (5.97015u) + Dermaline (8.95522u) + Tricordrazine (13.4328u)",\
-		"antiubodies for the disease that makes you scream.", "Xenomicrobes (1 unit)", "Miracle butt heal", "lesser death", "All-Natural", "still fucking hurts doc")] pill"
+		"antiubodies for the disease that makes you scream.", "Xenomicrobes (1 unit)", "Miracle butt heal", "lesser death", "All-Natural", "still fucking hurts doc", "I FORGOT HOW TO SHIT",\
+		"pill that when consumed and digested, destroys reality as we know it and remakes it with the only change being the clown can speak fluent chinese", "how much do you wanna bet this is an EMP and your robotic heart explodes",\
+		"Mannitol (50u)", "pill that makes you lose The Game", "raw agony essence from 100 tortured vox paramedics", "HELP YOU HAVE TO LET ME OUT OF HERE I HAVE BEEN LABELING PILLS FOR SIX MONTHS WITH NOTHING BUT MY FINGERNAILS THEY DONT LET ME DIE I GET CLONED I DIE I GET CLONED I DIE I GET CLONED I LABEL PILLS HELP ME OH GOD FUCK THEY ARE COMING LISTEN I AM IN THE GHETTO BAR PLEASE DON'T LEAVE M-",\
+		"this one turns you morbidly a beast", "Luck Essence (3u)", "pill (5 pill)", "mimes that he NEEDS an igniter", "Extra-strong Viagra (10u) - For the HoP only", "He could no longer help himself!", "‮txet sesrever taht llip")] pill"
 
 /obj/item/weapon/reagent_containers/pill/random/maintenance/New()
 	. = ..()
