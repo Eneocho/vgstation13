@@ -48,7 +48,7 @@
 /area/shack)
 "ci" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
-/obj/structure/reagent_dispensers/fueltank,
+/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/mineral/reticulite/fancy{
 	name = "gamer floor plating";
 	color = "#AAAAFF"
@@ -82,7 +82,6 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
 	},
-/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/mineral/reticulite/fancy{
 	name = "gamer floor plating";
 	color = "#AAAAFF"
@@ -132,9 +131,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden,
 /turf/simulated/floor/mineral/reticulite/fancy{
 	name = "gamer floor plating";
 	color = "#AAAAFF"
@@ -152,6 +149,10 @@
 "gA" = (
 /obj/machinery/light/he{
 	dir = 4
+	},
+/obj/machinery/atmospherics/unary/portables_connector{
+	dir = 8;
+	name = "Air Loop Tap"
 	},
 /turf/simulated/floor/mineral/reticulite/fancy{
 	name = "gamer floor plating";
@@ -203,6 +204,13 @@
 	name = "reinforced gamer window"
 	},
 /turf/simulated/floor/mineral/reticulite{
+	color = "#AAAAFF"
+	},
+/area/shack)
+"iT" = (
+/obj/structure/reagent_dispensers/fueltank,
+/turf/simulated/floor/mineral/reticulite/fancy{
+	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
 /area/shack)
@@ -288,8 +296,10 @@
 	},
 /area/shack)
 "ly" = (
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
 /obj/structure/table,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 5
+	},
 /turf/simulated/floor/mineral/reticulite/fancy{
 	name = "gamer floor plating";
 	color = "#AAAAFF"
@@ -590,6 +600,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 1
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 1
+	},
 /turf/simulated/floor/mineral/reticulite{
 	color = "#AAAAFF"
 	},
@@ -620,6 +633,7 @@
 /obj/structure/bed/chair/office/dark{
 	dir = 8
 	},
+/obj/effect/landmark/hobostart,
 /turf/simulated/floor/mineral/reticulite/fancy{
 	name = "gamer floor plating";
 	color = "#AAAAFF"
@@ -769,13 +783,8 @@
 	},
 /area/shack)
 "zm" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4;
-	initialize_directions = 12
-	},
-/obj/machinery/atmospherics/unary/portables_connector{
-	name = "Waste Loop Tap"
-	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/simulated/floor/mineral/reticulite/fancy{
 	name = "gamer floor plating";
 	color = "#AAAAFF"
@@ -849,10 +858,8 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
-	dir = 8
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/simulated/floor/mineral/reticulite/fancy{
 	name = "gamer floor plating";
 	color = "#AAAAFF"
@@ -896,6 +903,7 @@
 	opacity = 0;
 	name = "Semi-transparent Clockwork Airlock"
 	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/simulated/floor/mineral/reticulite{
 	color = "#AAAAFF"
 	},
@@ -929,10 +937,10 @@
 	},
 /area/shack)
 "Gc" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 6
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
+	dir = 1
+	},
 /turf/simulated/floor/mineral/reticulite/fancy{
 	name = "gamer floor plating";
 	color = "#AAAAFF"
@@ -997,6 +1005,7 @@
 	name = "gamer toilet";
 	dir = 4
 	},
+/obj/effect/landmark/hobostart,
 /turf/simulated/floor/mineral/reticulite/fancy{
 	name = "gamer floor plating";
 	color = "#AAAAFF"
@@ -1030,6 +1039,7 @@
 	icon_state = "shuttleseat_GAMER";
 	name = "high quality gamer chair"
 	},
+/obj/effect/landmark/hobostart,
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
@@ -1311,6 +1321,7 @@
 	dir = 8;
 	on = 1
 	},
+/obj/effect/landmark/hobostart,
 /turf/simulated/floor/mineral/reticulite/fancy{
 	name = "gamer floor plating";
 	color = "#AAAAFF"
@@ -1357,7 +1368,7 @@
 	},
 /area/shack)
 "ZS" = (
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden,
+/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden,
 /turf/simulated/floor/mineral/reticulite/fancy{
 	name = "gamer floor plating";
 	color = "#AAAAFF"
@@ -1532,13 +1543,13 @@ Nz
 Fc
 fn
 Bv
-nj
 UE
+nj
 nj
 Ds
 UE
 ZS
-Rr
+zm
 Ex
 pA
 ya
@@ -1567,8 +1578,8 @@ mn
 mb
 ci
 mn
-zm
-Na
+dM
+Hr
 tR
 rg
 Rr
@@ -1587,7 +1598,7 @@ ji
 mn
 aC
 gA
-rg
+iT
 Ng
 qY
 zD
