@@ -7,7 +7,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "aC" = (
 /obj/machinery/atmospherics/unary/portables_connector{
 	dir = 8;
@@ -17,7 +17,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "aJ" = (
 /obj/machinery/light/he{
 	dir = 1
@@ -26,7 +26,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "bZ" = (
 /obj/structure/table/woodentable,
 /obj/machinery/microwave/upgraded,
@@ -36,7 +36,7 @@
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "cc" = (
 /obj/item/trash/soda_cans,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -45,14 +45,14 @@
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "ci" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
 /turf/simulated/floor/mineral/reticulite/fancy{
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "cn" = (
 /obj/item/weapon/storage/wallet/random,
 /obj/item/weapon/storage/wallet/random,
@@ -66,7 +66,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "dM" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4;
@@ -76,7 +76,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "ed" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
@@ -85,7 +85,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "ei" = (
 /obj/structure/rack,
 /obj/item/clothing/suit/space,
@@ -98,7 +98,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "ew" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -107,7 +107,7 @@
 	color = "#AAAAFF";
 	name = "gamer wall"
 	},
-/area)
+/area/shack)
 "fn" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -123,7 +123,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "fH" = (
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -137,7 +137,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "gh" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -146,7 +146,7 @@
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "gA" = (
 /obj/machinery/light/he{
 	dir = 4
@@ -155,14 +155,14 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "gB" = (
 /obj/machinery/computer/security/telescreen/entertainment,
 /turf/simulated/wall/mineral/reticulite{
 	color = "#AAAAFF";
 	name = "gamer wall"
 	},
-/area)
+/area/shack)
 "ix" = (
 /obj/structure/wc/sink{
 	dir = 4;
@@ -172,7 +172,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "iP" = (
 /obj/structure/window/full/reinforced/plasma{
 	color = "#AAAAFF"
@@ -203,7 +203,7 @@
 /turf/simulated/floor/mineral/reticulite{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "ji" = (
 /obj/machinery/atmospherics/unary/tank{
 	dir = 8;
@@ -213,7 +213,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "jp" = (
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -229,7 +229,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "jH" = (
 /obj/effect/decal/cleanable/crumbs,
 /obj/effect/decal/cleanable/crumbs,
@@ -247,7 +247,7 @@
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "kA" = (
 /obj/structure/grille{
 	name = "low-visibility grille";
@@ -274,7 +274,7 @@
 /turf/simulated/floor/mineral/reticulite{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "le" = (
 /obj/structure/bed/racecar/shuttle,
 /obj/item/toy/plushie/fumo/mime{
@@ -284,7 +284,7 @@
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "ly" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
 /obj/structure/table,
@@ -292,13 +292,13 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "lI" = (
 /obj/machinery/light/he{
 	dir = 4
 	},
 /turf/unsimulated/floor/asteroid,
-/area)
+/area/shack)
 "mb" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4;
@@ -312,7 +312,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "mj" = (
 /obj/machinery/vending/nuka{
 	prices = list(/obj/item/weapon/reagent_containers/food/drinks/soda_cans/nuka = 0, /obj/item/weapon/reagent_containers/food/drinks/soda_cans/quantum = 0);
@@ -325,7 +325,7 @@
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "ml" = (
 /obj/machinery/libraryscanner,
 /obj/machinery/light/he{
@@ -335,13 +335,13 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "mn" = (
 /turf/simulated/wall/mineral/reticulite{
 	color = "#AAAAFF";
 	name = "gamer wall"
 	},
-/area)
+/area/shack)
 "mo" = (
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -356,7 +356,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "nb" = (
 /obj/structure/sign/poster{
 	icon_state = "animeposter3"
@@ -365,7 +365,7 @@
 	color = "#AAAAFF";
 	name = "gamer wall"
 	},
-/area)
+/area/shack)
 "ng" = (
 /obj/machinery/door/airlock/clockwork,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -375,14 +375,14 @@
 /turf/simulated/floor/mineral/reticulite{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "nj" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/simulated/floor/mineral/reticulite/fancy{
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "nT" = (
 /obj/machinery/door/window/plasma{
 	dir = 1
@@ -396,7 +396,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "od" = (
 /obj/structure/table/woodentable,
 /obj/item/pizzabox/blingpizza,
@@ -423,7 +423,7 @@
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "ok" = (
 /obj/item/trash/soda_cans,
 /obj/item/trash/soda_cans,
@@ -438,7 +438,7 @@
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "pc" = (
 /obj/structure/window/reinforced/plasma{
 	color = "#AAAAFF";
@@ -459,7 +459,7 @@
 /turf/simulated/floor/mineral/reticulite{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "pi" = (
 /obj/structure/rack,
 /obj/item/clothing/head/helmet/space,
@@ -469,7 +469,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "pA" = (
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 1;
@@ -479,7 +479,7 @@
 /turf/simulated/floor/mineral/reticulite{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "qa" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 1
@@ -493,7 +493,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "qY" = (
 /obj/structure/forge{
 	color = "#FFFF00";
@@ -506,14 +506,14 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "ra" = (
 /obj/machinery/light/he,
 /turf/simulated/floor/mineral/reticulite/fancy{
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "re" = (
 /obj/structure/grille{
 	name = "low-visibility grille";
@@ -542,13 +542,13 @@
 /turf/simulated/floor/mineral/reticulite{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "rg" = (
 /turf/simulated/floor/mineral/reticulite/fancy{
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "so" = (
 /obj/structure/rack,
 /obj/item/weapon/pickaxe/shovel,
@@ -578,7 +578,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "sy" = (
 /obj/machinery/door/airlock/clockwork{
 	opacity = 0;
@@ -590,7 +590,7 @@
 /turf/simulated/floor/mineral/reticulite{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "tH" = (
 /obj/structure/table/woodentable,
 /obj/effect/decal/cleanable/cockroach_remains,
@@ -609,7 +609,7 @@
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "tR" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -621,13 +621,13 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "uU" = (
 /obj/machinery/light/he{
 	dir = 1
 	},
 /turf/unsimulated/floor/asteroid,
-/area)
+/area/shack)
 "uZ" = (
 /obj/effect/decal/cleanable/crumbs,
 /obj/effect/decal/cleanable/crumbs,
@@ -638,7 +638,7 @@
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "vw" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 10
@@ -648,7 +648,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "vy" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -657,7 +657,7 @@
 /turf/simulated/floor/mineral/reticulite{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "vJ" = (
 /obj/structure/curtain/open/bed{
 	name = "bedroom curtain";
@@ -675,7 +675,7 @@
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "vO" = (
 /obj/machinery/atmospherics/unary/tank/air{
 	dir = 8
@@ -684,7 +684,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "wD" = (
 /obj/structure/table/woodentable,
 /obj/machinery/computer/library/checkout{
@@ -694,7 +694,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "xc" = (
 /obj/item/weapon/bikehorn/rubberducky/quantum,
 /obj/structure/window/reinforced/plasma{
@@ -706,7 +706,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "xg" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 1
@@ -715,7 +715,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "xl" = (
 /obj/machinery/door/airlock/clockwork{
 	opacity = 0;
@@ -728,7 +728,7 @@
 /turf/simulated/floor/mineral/reticulite{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "ya" = (
 /obj/machinery/airshield,
 /obj/machinery/door/airlock/clockwork{
@@ -738,7 +738,7 @@
 /turf/simulated/floor/mineral/reticulite{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "yd" = (
 /obj/structure/cable/yellow{
 	d1 = 2;
@@ -754,7 +754,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "yK" = (
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 4;
@@ -764,7 +764,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "zm" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4;
@@ -777,7 +777,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "zu" = (
 /obj/machinery/shower{
 	dir = 4
@@ -786,7 +786,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "zC" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 10
@@ -795,7 +795,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "zD" = (
 /obj/item/anvil{
 	color = "#FF0000";
@@ -805,20 +805,20 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "Ap" = (
 /obj/machinery/computer/tetris,
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "As" = (
 /turf/unsimulated/floor/asteroid,
-/area)
+/area/shack)
 "Ay" = (
 /obj/machinery/light/he,
 /turf/template_noop,
-/area)
+/area/shack)
 "AM" = (
 /obj/effect/decal/cleanable/crumbs,
 /obj/effect/decal/cleanable/crumbs,
@@ -829,7 +829,7 @@
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "Bv" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
@@ -839,7 +839,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "BB" = (
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -854,7 +854,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "CV" = (
 /obj/machinery/power/terminal{
 	dir = 1
@@ -870,7 +870,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "Ds" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 4
@@ -880,14 +880,14 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "DI" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/simulated/wall/mineral/reticulite{
 	color = "#AAAAFF";
 	name = "gamer wall"
 	},
-/area)
+/area/shack)
 "Ex" = (
 /obj/machinery/door/airlock/clockwork{
 	opacity = 0;
@@ -896,7 +896,7 @@
 /turf/simulated/floor/mineral/reticulite{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "EG" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -909,7 +909,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "Fc" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -924,7 +924,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "Gc" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 6
@@ -934,7 +934,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "Gk" = (
 /obj/effect/decal/cleanable/cockroach_remains,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -944,7 +944,7 @@
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "Hr" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -953,7 +953,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "IB" = (
 /obj/effect/decal{
 	icon = 'icons/obj/atmospherics/vent_scrubber.dmi';
@@ -977,7 +977,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "Jc" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4;
@@ -988,7 +988,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "Jo" = (
 /obj/structure/wc/toilet{
 	name = "gamer toilet";
@@ -998,7 +998,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "KK" = (
 /obj/structure/curtain/open/bed{
 	name = "bedroom curtain";
@@ -1011,7 +1011,7 @@
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "LB" = (
 /obj/structure/sign/poster{
 	icon_state = "bsposter9"
@@ -1020,7 +1020,7 @@
 	color = "#AAAAFF";
 	name = "gamer wall"
 	},
-/area)
+/area/shack)
 "LD" = (
 /obj/effect/decal/cleanable/crumbs,
 /obj/structure/bed/chair/office/dark{
@@ -1030,7 +1030,7 @@
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "LH" = (
 /obj/effect/decal/cleanable/crumbs,
 /obj/effect/decal/cleanable/crumbs,
@@ -1047,7 +1047,7 @@
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "ME" = (
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -1062,10 +1062,10 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "MH" = (
 /turf/template_noop,
-/area)
+/area/shack)
 "Na" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 9
@@ -1074,7 +1074,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "Ng" = (
 /obj/item/stack/sheet/glass/glass/bigstack,
 /obj/item/clothing/accessory/stethoscope,
@@ -1098,7 +1098,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "Nz" = (
 /obj/structure/cable/yellow{
 	d1 = 2;
@@ -1116,7 +1116,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "NM" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
@@ -1128,7 +1128,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "NT" = (
 /obj/structure/table/woodentable,
 /obj/item/weapon/reagent_containers/food/drinks/cult/gamer{
@@ -1143,7 +1143,7 @@
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "Op" = (
 /obj/structure/window/reinforced/plasma{
 	color = "#AAAAFF";
@@ -1169,7 +1169,7 @@
 /turf/simulated/floor/mineral/reticulite{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "Qz" = (
 /obj/structure/sign/poster{
 	icon_state = "vgposter2"
@@ -1178,7 +1178,7 @@
 	color = "#AAAAFF";
 	name = "gamer wall"
 	},
-/area)
+/area/shack)
 "QJ" = (
 /obj/structure/sign/poster{
 	icon_state = "bsposter8"
@@ -1187,20 +1187,20 @@
 	color = "#AAAAFF";
 	name = "gamer wall"
 	},
-/area)
+/area/shack)
 "Rr" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/mineral/reticulite/fancy{
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "Ry" = (
 /obj/machinery/disposal/compactor,
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "RS" = (
 /obj/structure/window/reinforced/plasma{
 	color = "#AAAAFF";
@@ -1221,7 +1221,7 @@
 /turf/simulated/floor/mineral/reticulite{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "RW" = (
 /obj/structure/sign/poster{
 	icon_state = "poster4"
@@ -1230,7 +1230,7 @@
 	color = "#AAAAFF";
 	name = "gamer wall"
 	},
-/area)
+/area/shack)
 "SK" = (
 /obj/machinery/computer/security{
 	emagged = 1;
@@ -1243,13 +1243,13 @@
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "Tg" = (
 /obj/machinery/light/he{
 	dir = 8
 	},
 /turf/unsimulated/floor/asteroid,
-/area)
+/area/shack)
 "Ug" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -1265,7 +1265,7 @@
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "UE" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -1275,7 +1275,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "UI" = (
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -1287,7 +1287,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "Xe" = (
 /obj/machinery/power/battery/smes{
 	chargelevel = 1e+006
@@ -1300,7 +1300,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "XA" = (
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 8;
@@ -1310,7 +1310,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "YN" = (
 /obj/item/trash/soda_cans,
 /obj/effect/decal/cleanable/crumbs,
@@ -1321,7 +1321,7 @@
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "Zc" = (
 /obj/machinery/vending/cola{
 	emagged = 1;
@@ -1332,7 +1332,7 @@
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "Zi" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 1
@@ -1341,7 +1341,7 @@
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "ZJ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4;
@@ -1350,14 +1350,14 @@
 /turf/simulated/floor/carpet/shag{
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 "ZS" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
 /turf/simulated/floor/mineral/reticulite/fancy{
 	name = "gamer floor plating";
 	color = "#AAAAFF"
 	},
-/area)
+/area/shack)
 
 (1,1,1) = {"
 MH
