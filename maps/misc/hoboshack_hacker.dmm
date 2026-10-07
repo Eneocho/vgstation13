@@ -48,6 +48,7 @@
 /area/shack)
 "ci" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
+/obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor/mineral/reticulite/fancy{
 	name = "gamer floor plating";
 	color = "#AAAAFF"
@@ -81,6 +82,7 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
 	},
+/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/mineral/reticulite/fancy{
 	name = "gamer floor plating";
 	color = "#AAAAFF"
@@ -308,6 +310,7 @@
 /obj/machinery/light/he{
 	dir = 1
 	},
+/obj/machinery/portable_atmospherics/canister/nitrogen,
 /turf/simulated/floor/mineral/reticulite/fancy{
 	name = "gamer floor plating";
 	color = "#AAAAFF"
@@ -1124,6 +1127,8 @@
 /obj/machinery/light/he{
 	dir = 8
 	},
+/obj/structure/safe,
+/obj/abstract/map/spawner/safe/any,
 /turf/simulated/floor/mineral/reticulite/fancy{
 	name = "gamer floor plating";
 	color = "#AAAAFF"
