@@ -153,6 +153,7 @@ var/list/datum/stack_recipe/uranium_recipes = list ( \
 	perunit = CC_PER_SHEET_PLASMA
 	mat_type = MAT_PLASMA
 	starting_materials = list(MAT_PLASMA = CC_PER_SHEET_PLASMA)
+	w_type = RECYK_METAL | RECYK_PUREPLASMA //only used for the eggman's map thing
 
 var/list/datum/stack_recipe/plasma_recipes = list ( \
 	new/datum/stack_recipe("plasma floor tile", /obj/item/stack/tile/mineral/plasma, 1, 4, 20), \
