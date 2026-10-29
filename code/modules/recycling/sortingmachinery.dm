@@ -421,6 +421,7 @@ var/list/tagger_locations = list()
 	types[RECYK_FABRIC]     = "Fabric"
 	types[RECYK_WAX]        = "Wax"
 	types[RECYK_CARDBOARD]  = "Cardboard"
+	types[RECYK_PUREPLASMA] = "Solid Plasma" //only used for a very specific mapping thing the egg man needed
 	types[RECYK_MISC]       = "Miscellaneous"
 
 /obj/machinery/sorting_machine/recycling/process()
